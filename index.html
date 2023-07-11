@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="menu1">
+                <h1 class="logo"><a href="/index.html">Coco</a></h1>
+                <ul>
+                    <li><a class="home" href="index.html">หน้าแรก</a></li>
+                    <li><a class="series" href="page2.html">ซีรี่ย์</a></li>
+                    <li><a class="variety" href="#">วาไรตี้</a></li>
+                    <li><a class="movie" href="#">ภาพยนตร์</a></li>
+                    <li><a class="anime" href="#">อนิเมะ</a></li>
+                    <li><a class="total" href="page2.html">ทั้งหมด</a></li>
+                </ul>
+            </div>
+            <div class="menu2">
+                <div class="search-box">
+                    <input type="text" class="input">
+                    <button class="btnSearch" type="submit">
+                        <!-- <img src="img/icon/search.png" width="18px" height="18px" alt=""> -->
+                        <img src="img/icon/search2.png" width="18px" height="18px" alt="">
+                    </button>
+                </div>
+                <div class="dot">
+                    <a href="page3.html"><img class="profile1" src="img/user.png" alt=""></a>
+                    
+                </div>
+            </div>
+            <div class="small">
+                <div class="menu3">
+                    <div class="small">
+                        <h1 class="logo"><a href="/index.html">Coco</a></h1>
+                        <p class="line">|</p>
+                        <div class="btnSearch2">
+                            <!-- <img class="search" src="img/icon/magnifying-glass.png" width="22px" height="22px" alt=""> -->
+                            <img class="search" src="img/icon/magnifying-glass2.png" width="22px" height="22px" alt="">
+                            
+                        </div>
+                        <p class="input">Input content or names</p>
+                        <p class="btnVip">+VIP</p>
+                    </div>
+                </div>
+                <div class="menu4">
+                    <div class="text1"><a href="#"><p class="module_title">ซีรี่ย์จีน</p></a></div>
+                    <div class="text2"><a href="#"><p class="module_title">ซีรี่ย์เกาหลี</p></a></div>
+                    <div class="text3"><a href="#"><p class="module_title">ละครไทย/ภาพยนตร์</p></a></div>
+                    <div class="text4"><a href="#"><p class="module_title">ซีรี่ย์ฝรั่ง</p></a></div>
+                </div>
+            </div>
+            <div class="mainBottom">
+                <div class="menuIcon">
+                    <div class="btnHome" >
+                      <a hraf="index.html">
+                        <img src="img/icon/homepage.png" width="23px" height="23px" alt="" >
+                        <p>Home</p>
+                      </a>
+                    </div>
+                    <div class="btnExplore">
+                      <a href="page2.html">
+                        <img src="img/icon/explore.png" width="23px" height="23px" alt="">
+                        <p>Explore</p>
+                    </div>
+                    <div class="btnUser">
+                      <a href="page3.html">
+                        <img src="img/icon/user.png" width="23px" height="23px" alt="">
+                        <p>Account</p>
+                      </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- 
+        video intro 
+    -->
+    <!-- <div class="videoIntro">
+        <iframe class="video" width="1000" height="500" src="https://www.youtube.com/embed/VSn3UmvXx6I/-SFcIUEvNOQ?autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div> -->
+    
+
+    <!-- 
+        img slider
+    -->
+    <div class="box">
+        <div class="slider">
+            <div class="slides">
+    
+                <!-- radio buttons start -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- radio buttons end -->
+                <!-- slide img start -->
+                <div class="slide first">
+                    <img src="img/img-slide/1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img-slide/2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img-slide/3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/img-slide/4.jpg" alt="">
+                </div>
+                <!-- slide img end -->
+                <!-- automatic navigation start -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- automatic navigation end -->
+    
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+    
+        </div>
+    
+    </div>
+
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function(){
+          document.getElementById('radio' + counter).checked = true;
+          counter++;
+          if(counter > 4){
+            counter = 1;
+          }
+        }, 5000);
+    </script>
+    
+
+    <!-- 
+        movie grid 
+    -->
+
+    <!-- 
+        chinese series 
+    -->
+
+    <div class="chSeries">
+        <div class="textIntro">
+            <p class="module_title">ซีรี่ย์จีน</p>
+        </div>
+        <div class="module_list">
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/จีน/City-of-Streamer-2022-วังวนรักหลังม่านเมืองมายา.png"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            updated to 12
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">City of Streamer วังวนรักหลังม่านเมืองมายา</h1>
+                    <p class="item_subtitle">จิ่งเถียน สวี่เว่ยโจว จิงเชา ไห่หลิง เจีย ชิ หวังอี้เฟย</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/Mirror-Twin-Cities-2022-กระจกสองนครา.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            updated to 14
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">The Mirror: Twin Cities กระจกสองนครา</h1>
+                    <p class="item_subtitle">หลี่อี้เฟิง เฉินอวี้ฉี เจิ้งเย่เฉิง หยางจื้อเหวิน หลิวห่ายควน เย่เซิ่งเจีย
+                        หลิวช่าง หวังหยวนเข่อ ทังเมิ่งเจีย</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/ps3y47d5ke8PxWLzvF6-o.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Put your head on my shoulder อุ่นไอในใจเธอ</h1>
+                    <p class="item_subtitle">ซิง เฟย,หลินอี,ถังเสี่ยวเทียน,เจิ้งอิงเฉิน,โจวจวินเหว่ย</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/image32.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Word of Honor นักรบพเนจรสุดขอบฟ้า</h1>
+                    <p class="item_subtitle">จางเจ๋อฮั่น, กงจวิ้น, โจวเหย่, หม่าเหวินหย่วน, ซุนซีหลิง
+                        ผู้กำกับ: เฉิงจื้อเชา, หม่าหัวกัน</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/pic1-42-683x1024.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">You Are My Glory ดุจดวงดาวเกียรติยศ</h1>
+                    <p class="item_subtitle">หยางหยาง ตี๋ลี่เร่อปา พานเยว่หมิง หูเข่อ หวางเยี่ยนหลิง เจิ้งเหอฮุ่ยจื่อ
+                    </p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/0.webp" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Douluo Continent ตำนานจอมยุทธ์ภูตถังซาน</h1>
+                    <p class="item_subtitle">เซียวจ้าน อู๋เซวียนอี๋ เฉินอี้หรู เกาไท่หยู่ หลิวเหม่ยถง หลิวรุ่นหนาน ดิงเซี่ยวอิ๋ง
+                    </p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/363576b1ca3ef227c9640a7b3de25834.png_2200x2200q80.jpg_.webp" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Falling Into Your Smile รักยิ้มของเธอ</h1>
+                    <p class="item_subtitle">สวีข่าย เฉิงเซียว  R1SEไจ๋เซียวเหวิน เหยาฉือ โจวอี้หราน หมี่เร่อ เกาหาน
+                    </p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/Love-Scenery.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Love Scenery ฉากรักวัยฝัน</h1>
+                    <p class="item_subtitle">สวี๋ลู่ หลินอี หูปิง หูอวิ๋นหาว จ้งตานหนี
+                    </p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/untamed.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">The Untamed ปรมาจารย์ลัทธิมาร</h1>
+                    <p class="item_subtitle">เซียวจ้าน หวังอี้ป๋อ เมิ่งจึอี้ เซวียนลู่ วังจั๋วเฉิง อวีบิน หลิวห่ายควน
+                    </p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <span class="cover_all">
+                        <img class="item_poster" src="img/จีน/q4mg5ibq5H1h0aUO21a-o.jpg" alt="">
+                    </span>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Eternal Love of Dream สามชาติสามภพ ลิขิตเหนือเขนย</h1>
+                    <p class="item_subtitle">ตี๋ลี่เร่อปา เกาเหว่ยกวง เฉินฉู่เหอ กัวผิ่นเชา หลิวอวี่ซิน หลิวรุ่ยหลิน หวังเซียว หลี่ตงเหิง หยวนอวี่เซวียน หวงจวิ้นเจี๋ย
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+        korean series 
+    -->
+
+    <div class="koSeries">
+        <div class="textIntro">
+            <p class="module_title">ซีรี่ย์เกาหลี</p>
+        </div>
+        <div class="module_list">
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/1.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Her Private Life โลกอีกใบของยัยแฟนเกิร์ล</h1>
+                    <p class="item_subtitle">ปาร์คมินยอง คิมแจอุค โบฮยอนอัน คิมโบรา</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/250px-He_Is_Psychometric.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">He Is Psychometric สัมผัสรักพลังจิต</h1>
+                    <p class="item_subtitle">ปาร์คจินยอง ชินฮเยอึน คิมดาซุน คิมกวอน</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/messageImage_1625508825499.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">True Beauty ความลับของนางฟ้า</h1>
+                    <p class="item_subtitle">มุนกายอง ชาอึนอู ฮวังอินยอบ พัคยูนา</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/phmiaw1p0rDJdgrGq0p-o.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">What’s Wrong With Secretary Kim รักมั้ยนะ เลขาคิม</h1>
+                    <p class="item_subtitle">พัคซอจุน ปาร์คมินยอง อีแทฮวาน คังกียอง ฮวังชานซอง พโยเยจิน</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/Pic-1-6-716x1024.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">START-UP สตาร์ทอัพ</h1>
+                    <p class="item_subtitle">คัมฮันนา คิมซอนโฮ นัมจูฮยอค สเตฟานี ลี แพซูจี</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/8145ac30-d247-11eb-87d9-41de76b7f7b8_original.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">The Devil Judge ผู้พิพากษาปีศาจ</h1>
+                    <p class="item_subtitle">จีซอง ปาร์คจินยอง คิมมินจอง พัคกยูยอง</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/Shall-We-Have-A-Cup-Of-Coffee-KakaoTV-Poster-05102021.webp"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Would You Like a Cup of Coffee? ดื่มกาแฟสักแก้วไหม?</h1>
+                    <p class="item_subtitle">องซองอู พัคโฮซัน</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/Nevertheless-JTBC-Main-Poster-26052021.webp"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Nevertheless รักนี้ห้ามไม่ได้</h1>
+                    <p class="item_subtitle">ซงคัง ฮันโซฮี แชจงฮยอบ</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/mWYW3xNeV2IM06aUl2xMUdLicpa.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Vincenzo วินเชนโซ่ ทนายมาเฟีย</h1>
+                    <p class="item_subtitle">ซงจุงกิ จอนยอบิน อกแทกยอน</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/เกาหลี/18 Again 00.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">18 Again ย้อนรัก ย้อนวัยฝัน</h1>
+                    <p class="item_subtitle">คิมฮานึล ยูนซังฮยอน อีโดฮยอน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 
+        thai series 
+    -->
+
+    <div class="thSeries">
+        <div class="textIntro">
+            <p class="module_title">ละครไทย/ภาพยนตร์</p>
+        </div>
+        <div class="module_list">
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/9d06e0e4-ea06-4997-bb72-3cf51f48208b.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            updated to 3
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">จุดหมายคือท้องฟ้า</h1>
+                    <p class="item_subtitle">ชยพัทธ์ คงทรัพย์,กฤษณพงศ์ ศรีภัททิยานนท์,ฐานัตถ์ จิรรัชชกิจ,คณนาถ ญาณสุคนธ์</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/73635f89-3e20-4631-a0eb-49f9cb25ced2.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            updated to 7
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">ออฟฟิศติดฮา</h1>
+                    <p class="item_subtitle">กรภพ จันทร์เจริญ,ปองกูล สืบซึ้ง,ธนกฤต พานิชวิทย์,ณัฐภัสสร สิมะเสถียร,นลิน โฮเลอร์,จตุรงค์ พลบูรณ์,ภาลฎา ฐิตะวชิระ</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/16128265645fc615eaec4f2.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">อ้าย..คนหล่อลวง</h1>
+                    <p class="item_subtitle">ณเดชน์ คูกิมิยะ,พิมพ์ชนก ลือวิเศษไพบูลย์,ธิติ มหาโยธารักษ์</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/3c2ab5cb-251b-450e-8a59-fa43e4dc9930.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">มายริทึ่ม</h1>
+                    <p class="item_subtitle">ประเสริฐสุข เหมทานนท์, คริส พีรวัส แสงโพธิรัตน์, บุญสิตา อินทาปัจ, อานนท์ สายแสงจันทร์, ณัฏฐ์ เดชะปัญญา, อติคุณ อดุลโภคาธร, เอกชัย เสวตรัมย์, สุชัฒติ จั่นอี๊ด (ชัช Bodyslam)</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/c78accb2b3c241fe3b70c9a65c743c27.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">ฉลาดเกมส์โกง (2020)</h1>
+                    <p class="item_subtitle">เพลินพิชญา โกมลารชุน, จินเจษฎ์ วรรธนะสิน,ศวรรยา ไพศาลพยัคฆ์,พาริส อินทรโกมาลย์สุต</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/qonvfjf33iNwx2m2jFM-o.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">ฉลาดเกมส์โกง (2017)</h1>
+                    <p class="item_subtitle">ชุติมณฑน์ จึงเจริญสุขยิ่ง,ชานน สันตินธรกุล,ธีรดนย์ ศุภพันธุ์ภิญโญ</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/5.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">พี่มาก...พระโขนง</h1>
+                    <p class="item_subtitle">มาริโอ้ เมาเร่อ,ดาวิกา โฮร์เน่,ณัฏฐพงษ์ ชาติพงศ์</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/83bb5a25-48d3-4a54-a2ac-21428f6bfca6.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">แค่เพื่อนครับเพื่อน</h1>
+                    <p class="item_subtitle">กรภัทร์ เกิดพันธุ์,ภวัต จิตต์สว่างดี,ภัทรานิษฐ์ ลิ้มปติยากร,พรรษา วอสเบียน</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/ad188620-96b8-483a-911b-7e862dbd13b0.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">กระเช้าสีดา</h1>
+                    <p class="item_subtitle">นุ่น วรนุช ภิรมย์ภักดี,กรีน อัษฎาพร สิริวัฒน์ธนกุล,ปีเตอร์ คอร์ป ไดเรนดัล,ก๊อต จิรายุ ตันตระกูล,คลาวเดีย จักรพันธุ์,วิทยา วสุไกรไพศาล</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ไทย/72a07d82-c467-4b67-bba9-af0fd78704d7.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">แม่ครัวคนใหม่</h1>
+                    <p class="item_subtitle">วชิรวิชญ์ ไพศาลกุลวงศ์ ,น้ำฟ้า ธัญญภัสร์ ภัทรธีรชัยเจริญ , ศุภพงษ์ อุดมแก้วกาญจนา,พฤกษ์ พานิช</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+        eng series 
+    -->
+
+    <div class="engSeries">
+        <div class="textIntro">
+            <p class="module_title">ซีรี่ย์ฝรั่ง</p>
+        </div>
+        <div class="module_list">
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/The-Good-Doctor-Season-1.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">The Good Doctor Season 1 คุณหมอฟ้าประทาน</h1>
+                    <p class="item_subtitle">เฟรดดี้ ไฮห์มอร์,แอนโทเนีย โทมัส,นิโคลัส กอนซาเลซ</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/Shadow-and-Bone.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Shadow and Bone ตำนานกรีชา</h1>
+                    <p class="item_subtitle">เจสซี่ เมย์ ลี,อาร์ชี่ เรโนซ์,เบน บาร์นส์</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/Elite-เล่ห์ร้ายเกมไฮโซ-2018.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Elite เล่ห์ร้ายเกมไฮโซ (2018)</h1>
+                    <p class="item_subtitle">อิตซัน เอสกามิลยา,มิเกล เบร์นาร์โด,ดานนา ปาโอลา</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/TH_EMILY-IN-PARIS-2-Official-Trailer-Key-Art.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Emily in Paris เอมิลี่ในปารีส</h1>
+                    <p class="item_subtitle">ลิลี่ คอลลินส์,ฟิลิปปีน เลอรัว-โบลิเออ,แอชลีย์ พาร์ค</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/Lupin_P2_Main_Vertical_RGB_Pre_NoDate_EN-UK-scaled.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Lupin Season 2 จอมโจรลูแปง</h1>
+                    <p class="item_subtitle">โอมาร์ ซี,ลูดิวีน ซาญนิเยร์,โคลทิลด์ เอส์ม</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/MANIFEST-ss2-1.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Manifest เที่ยวบินพิศวง</h1>
+                    <p class="item_subtitle">เมลิสซา รอกซ์เบิร์ก,จอช ดัลลัส,แอทธีนา คาร์กานิส</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/Bridgerton-Season-1-2020-วังวนรัก-เกมไฮโซ.png"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Bridgerton บริดเจอร์ตัน: วังวนรัก เกมไฮโซ</h1>
+                    <p class="item_subtitle">แอดโจ แอนโดห์,จูลี แอนดรูว์,ลอร์เรน แอชบอร์น</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/Locke-Key-Season-2-2021-ล็อคแอนด์คีย์-ปริศนาลับตระกูลล็อค.png"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Locke & Key Season 2 ล็อคแอนด์คีย์: ปริศนาลับตระกูลล็อค</h1>
+                    <p class="item_subtitle">ดาร์บี้ สแตนช์ฟิลด์,คอนเนอร์ เจสซัป,เอมิเลีย โจนส์</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/The-End-of-the-F.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">The End of the F***ing World โลกมันห่วย ช่วยไม่ได้</h1>
+                    <p class="item_subtitle">เจสซิก้า บาร์เดน,อเล็กซ์ ลอว์เธอร์,เนโอมิ เอคกี้</p>
+                </div>
+            </div>
+            <div class="module_item">
+                <div class="itemPoster">
+                    <div class="cover_all">
+                        <img class="item_poster" src="img/ฝรั่ง/MV5BZDNiZTEzMjgtNmU5OS00Yjc2LWJlMTUtNDI1ZGEzZTkxNzE5XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg"
+                            alt="">
+                    </div>
+
+                    <div class="label">
+                        <div class="item_lable">
+                            Full
+                        </div>
+                    </div>
+                </div>
+                <div class="itemInfo">
+                    <h1 class="item_title">Control Z คอนโทรล Z</h1>
+                    <p class="item_subtitle">อนา วาเลเรีย เบเซอร์ริล,ไมเคิล รอนด้า,แยงเคิล สเตวาน</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
