@@ -4,22 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ชื่อหน้าเว็บไซต์ -->
+    <title>Coco</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon/favicon-removebg-preview.ico">
+    <!-- สามารถใส่แท็ก style แบบภยในแท็ก แท็กแยก หรือเพื่อตกแต่ง แทนการเขื่อมกับไฟล์ css แยก -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mobile.css">
 
 </head>
 
 <body>
+    <!-- class id -->
     <nav class="nav">
         <div class="container">
             <div class="menu1">
                 <h1 class="logo"><a href="/index.html">Coco</a></h1>
                 <ul>
+                    <!-- แท้ก a คือบลิงค์ไปยังปลายทาง URL ที่กำหนดไว้ -->
                     <li><a class="home" href="index.html">หน้าแรก</a></li>
+                    <!-- ถ้าใส่ target="_blank" ก็จะไปหน้าแยก-->
                     <li><a class="series" href="page2.html">ซีรี่ย์</a></li>
-                    <li><a class="variety" href="#">วาไรตี้</a></li>
+                    <!-- ใส่ malito ใน href จะเป็นการส่่งเมลหาผู้ที่เราแนบอีเมล -->
+                    <li><a class="variety" href="mailto:nampoochumaya6510@gmail.com">วาไรตี้</a></li>
                     <li><a class="movie" href="#">ภาพยนตร์</a></li>
                     <li><a class="anime" href="#">อนิเมะ</a></li>
                     <li><a class="total" href="page2.html">ทั้งหมด</a></li>
@@ -29,15 +37,28 @@
                 <div class="search-box">
                     <input type="text" class="input">
                     <button class="btnSearch" type="submit">
-                        <!-- <img src="img/icon/search.png" width="18px" height="18px" alt=""> -->
+                        <!-- แท็ก img ใส่รูปภาพ -->
                         <img src="img/icon/search2.png" width="18px" height="18px" alt="">
                     </button>
                 </div>
                 <div class="dot">
-                    <a href="page3.html"><img class="profile1" src="img/user.png" alt=""></a>
-                    
+                    <!-- tag abbr เอาไว้อธิบายเพิ่มเติมในส่วนของตัวย่อหรือไอคอน เช่นไอคอนสภาพอากาศใน tmd -->
+                    <!-- หรือใส่เป็น title เฉยๆก็ได้ -->
+                    <abbr title="Profile">
+                        <!-- <abbr title="World Health Organization">WHO</abbr> -->
+                        <a href="page3.html"><img class="profile1" src="img/user.png" alt=""></a>
+                    </abbr>
                 </div>
             </div>
+            <!-- แท็กที่น่าสนใจ 
+                <img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+                    <map name="workmap">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+                    <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+                 </map> 
+                 https://www.w3schools.com/html/html_images_imagemap.asp
+            -->
             <div class="small">
                 <div class="menu3">
                     <div class="small">
@@ -46,37 +67,45 @@
                         <div class="btnSearch2">
                             <!-- <img class="search" src="img/icon/magnifying-glass.png" width="22px" height="22px" alt=""> -->
                             <img class="search" src="img/icon/magnifying-glass2.png" width="22px" height="22px" alt="">
-                            
+
                         </div>
                         <p class="input">Input content or names</p>
                         <p class="btnVip">+VIP</p>
                     </div>
                 </div>
                 <div class="menu4">
-                    <div class="text1"><a href="#"><p class="module_title">ซีรี่ย์จีน</p></a></div>
-                    <div class="text2"><a href="#"><p class="module_title">ซีรี่ย์เกาหลี</p></a></div>
-                    <div class="text3"><a href="#"><p class="module_title">ละครไทย/ภาพยนตร์</p></a></div>
-                    <div class="text4"><a href="#"><p class="module_title">ซีรี่ย์ฝรั่ง</p></a></div>
+                    <div class="text1"><a href="#">
+                            <p class="module_title">ซีรี่ย์จีน</p>
+                        </a></div>
+                    <div class="text2"><a href="#">
+                            <p class="module_title">ซีรี่ย์เกาหลี</p>
+                        </a></div>
+                    <div class="text3"><a href="#">
+                            <p class="module_title">ละครไทย/ภาพยนตร์</p>
+                        </a></div>
+                    <div class="text4"><a href="#">
+                            <p class="module_title">ซีรี่ย์ฝรั่ง</p>
+                        </a></div>
                 </div>
             </div>
             <div class="mainBottom">
                 <div class="menuIcon">
-                    <div class="btnHome" >
-                      <a hraf="index.html">
-                        <img src="img/icon/homepage.png" width="23px" height="23px" alt="" >
-                        <p>Home</p>
-                      </a>
+                    <div class="btnHome">
+                        <a hraf="index.html">
+                            <img src="img/icon/homepage.png" width="23px" height="23px" alt="">
+                            <p>Home</p>
+                        </a>
                     </div>
                     <div class="btnExplore">
-                      <a href="page2.html">
-                        <img src="img/icon/explore.png" width="23px" height="23px" alt="">
-                        <p>Explore</p>
+                        <a href="page2.html">
+                            <img src="img/icon/explore.png" width="23px" height="23px" alt="">
+                            <p>Explore</p>
                     </div>
                     <div class="btnUser">
-                      <a href="page3.html">
-                        <img src="img/icon/user.png" width="23px" height="23px" alt="">
-                        <p>Account</p>
-                      </a>
+                        <a href="page3.html">
+                            <img src="img/icon/user.png" width="23px" height="23px" alt="">
+                            <p>Account</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -92,7 +121,7 @@
         <iframe class="video" width="1000" height="500" src="https://www.youtube.com/embed/VSn3UmvXx6I/-SFcIUEvNOQ?autoplay=1&mute=1&enablejsapi=1" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div> -->
-    
+
 
     <!-- 
         img slider
@@ -100,7 +129,7 @@
     <div class="box">
         <div class="slider">
             <div class="slides">
-    
+
                 <!-- radio buttons start -->
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
@@ -129,7 +158,7 @@
                     <div class="auto-btn4"></div>
                 </div>
                 <!-- automatic navigation end -->
-    
+
             </div>
             <!-- manual navigation start -->
             <div class="navigation-manual">
@@ -139,22 +168,22 @@
                 <label for="radio4" class="manual-btn"></label>
             </div>
             <!-- manual navigation end -->
-    
+
         </div>
-    
+
     </div>
 
     <script type="text/javascript">
         var counter = 1;
-        setInterval(function(){
-          document.getElementById('radio' + counter).checked = true;
-          counter++;
-          if(counter > 4){
-            counter = 1;
-          }
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
         }, 5000);
     </script>
-    
+
 
     <!-- 
         movie grid 
@@ -272,14 +301,16 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">Douluo Continent ตำนานจอมยุทธ์ภูตถังซาน</h1>
-                    <p class="item_subtitle">เซียวจ้าน อู๋เซวียนอี๋ เฉินอี้หรู เกาไท่หยู่ หลิวเหม่ยถง หลิวรุ่นหนาน ดิงเซี่ยวอิ๋ง
+                    <p class="item_subtitle">เซียวจ้าน อู๋เซวียนอี๋ เฉินอี้หรู เกาไท่หยู่ หลิวเหม่ยถง หลิวรุ่นหนาน
+                        ดิงเซี่ยวอิ๋ง
                     </p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <span class="cover_all">
-                        <img class="item_poster" src="img/จีน/363576b1ca3ef227c9640a7b3de25834.png_2200x2200q80.jpg_.webp" alt="">
+                        <img class="item_poster"
+                            src="img/จีน/363576b1ca3ef227c9640a7b3de25834.png_2200x2200q80.jpg_.webp" alt="">
                     </span>
 
                     <div class="label">
@@ -290,7 +321,7 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">Falling Into Your Smile รักยิ้มของเธอ</h1>
-                    <p class="item_subtitle">สวีข่าย เฉิงเซียว  R1SEไจ๋เซียวเหวิน เหยาฉือ โจวอี้หราน หมี่เร่อ เกาหาน
+                    <p class="item_subtitle">สวีข่าย เฉิงเซียว R1SEไจ๋เซียวเหวิน เหยาฉือ โจวอี้หราน หมี่เร่อ เกาหาน
                     </p>
                 </div>
             </div>
@@ -344,7 +375,8 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">Eternal Love of Dream สามชาติสามภพ ลิขิตเหนือเขนย</h1>
-                    <p class="item_subtitle">ตี๋ลี่เร่อปา เกาเหว่ยกวง เฉินฉู่เหอ กัวผิ่นเชา หลิวอวี่ซิน หลิวรุ่ยหลิน หวังเซียว หลี่ตงเหิง หยวนอวี่เซวียน หวงจวิ้นเจี๋ย
+                    <p class="item_subtitle">ตี๋ลี่เร่อปา เกาเหว่ยกวง เฉินฉู่เหอ กัวผิ่นเชา หลิวอวี่ซิน หลิวรุ่ยหลิน
+                        หวังเซียว หลี่ตงเหิง หยวนอวี่เซวียน หวงจวิ้นเจี๋ย
                     </p>
                 </div>
             </div>
@@ -364,8 +396,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/1.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/1.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -382,8 +413,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/250px-He_Is_Psychometric.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/250px-He_Is_Psychometric.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -400,8 +430,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/messageImage_1625508825499.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/messageImage_1625508825499.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -418,8 +447,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/phmiaw1p0rDJdgrGq0p-o.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/phmiaw1p0rDJdgrGq0p-o.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -436,8 +464,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/Pic-1-6-716x1024.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/Pic-1-6-716x1024.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -472,8 +499,8 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/Shall-We-Have-A-Cup-Of-Coffee-KakaoTV-Poster-05102021.webp"
-                            alt="">
+                        <img class="item_poster"
+                            src="img/เกาหลี/Shall-We-Have-A-Cup-Of-Coffee-KakaoTV-Poster-05102021.webp" alt="">
                     </div>
 
                     <div class="label">
@@ -490,8 +517,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/Nevertheless-JTBC-Main-Poster-26052021.webp"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/Nevertheless-JTBC-Main-Poster-26052021.webp" alt="">
                     </div>
 
                     <div class="label">
@@ -508,8 +534,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/mWYW3xNeV2IM06aUl2xMUdLicpa.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/mWYW3xNeV2IM06aUl2xMUdLicpa.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -526,8 +551,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/เกาหลี/18 Again 00.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/เกาหลี/18 Again 00.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -557,8 +581,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/9d06e0e4-ea06-4997-bb72-3cf51f48208b.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/9d06e0e4-ea06-4997-bb72-3cf51f48208b.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -569,14 +592,14 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">จุดหมายคือท้องฟ้า</h1>
-                    <p class="item_subtitle">ชยพัทธ์ คงทรัพย์,กฤษณพงศ์ ศรีภัททิยานนท์,ฐานัตถ์ จิรรัชชกิจ,คณนาถ ญาณสุคนธ์</p>
+                    <p class="item_subtitle">ชยพัทธ์ คงทรัพย์,กฤษณพงศ์ ศรีภัททิยานนท์,ฐานัตถ์ จิรรัชชกิจ,คณนาถ ญาณสุคนธ์
+                    </p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/73635f89-3e20-4631-a0eb-49f9cb25ced2.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/73635f89-3e20-4631-a0eb-49f9cb25ced2.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -587,14 +610,14 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">ออฟฟิศติดฮา</h1>
-                    <p class="item_subtitle">กรภพ จันทร์เจริญ,ปองกูล สืบซึ้ง,ธนกฤต พานิชวิทย์,ณัฐภัสสร สิมะเสถียร,นลิน โฮเลอร์,จตุรงค์ พลบูรณ์,ภาลฎา ฐิตะวชิระ</p>
+                    <p class="item_subtitle">กรภพ จันทร์เจริญ,ปองกูล สืบซึ้ง,ธนกฤต พานิชวิทย์,ณัฐภัสสร สิมะเสถียร,นลิน
+                        โฮเลอร์,จตุรงค์ พลบูรณ์,ภาลฎา ฐิตะวชิระ</p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/16128265645fc615eaec4f2.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/16128265645fc615eaec4f2.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -611,8 +634,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/3c2ab5cb-251b-450e-8a59-fa43e4dc9930.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/3c2ab5cb-251b-450e-8a59-fa43e4dc9930.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -623,14 +645,15 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">มายริทึ่ม</h1>
-                    <p class="item_subtitle">ประเสริฐสุข เหมทานนท์, คริส พีรวัส แสงโพธิรัตน์, บุญสิตา อินทาปัจ, อานนท์ สายแสงจันทร์, ณัฏฐ์ เดชะปัญญา, อติคุณ อดุลโภคาธร, เอกชัย เสวตรัมย์, สุชัฒติ จั่นอี๊ด (ชัช Bodyslam)</p>
+                    <p class="item_subtitle">ประเสริฐสุข เหมทานนท์, คริส พีรวัส แสงโพธิรัตน์, บุญสิตา อินทาปัจ, อานนท์
+                        สายแสงจันทร์, ณัฏฐ์ เดชะปัญญา, อติคุณ อดุลโภคาธร, เอกชัย เสวตรัมย์, สุชัฒติ จั่นอี๊ด (ชัช
+                        Bodyslam)</p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/c78accb2b3c241fe3b70c9a65c743c27.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/c78accb2b3c241fe3b70c9a65c743c27.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -641,14 +664,14 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">ฉลาดเกมส์โกง (2020)</h1>
-                    <p class="item_subtitle">เพลินพิชญา โกมลารชุน, จินเจษฎ์ วรรธนะสิน,ศวรรยา ไพศาลพยัคฆ์,พาริส อินทรโกมาลย์สุต</p>
+                    <p class="item_subtitle">เพลินพิชญา โกมลารชุน, จินเจษฎ์ วรรธนะสิน,ศวรรยา ไพศาลพยัคฆ์,พาริส
+                        อินทรโกมาลย์สุต</p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/qonvfjf33iNwx2m2jFM-o.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/qonvfjf33iNwx2m2jFM-o.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -665,8 +688,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/5.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/5.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -683,8 +705,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/83bb5a25-48d3-4a54-a2ac-21428f6bfca6.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/83bb5a25-48d3-4a54-a2ac-21428f6bfca6.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -695,14 +716,14 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">แค่เพื่อนครับเพื่อน</h1>
-                    <p class="item_subtitle">กรภัทร์ เกิดพันธุ์,ภวัต จิตต์สว่างดี,ภัทรานิษฐ์ ลิ้มปติยากร,พรรษา วอสเบียน</p>
+                    <p class="item_subtitle">กรภัทร์ เกิดพันธุ์,ภวัต จิตต์สว่างดี,ภัทรานิษฐ์ ลิ้มปติยากร,พรรษา วอสเบียน
+                    </p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/ad188620-96b8-483a-911b-7e862dbd13b0.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/ad188620-96b8-483a-911b-7e862dbd13b0.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -713,14 +734,14 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">กระเช้าสีดา</h1>
-                    <p class="item_subtitle">นุ่น วรนุช ภิรมย์ภักดี,กรีน อัษฎาพร สิริวัฒน์ธนกุล,ปีเตอร์ คอร์ป ไดเรนดัล,ก๊อต จิรายุ ตันตระกูล,คลาวเดีย จักรพันธุ์,วิทยา วสุไกรไพศาล</p>
+                    <p class="item_subtitle">นุ่น วรนุช ภิรมย์ภักดี,กรีน อัษฎาพร สิริวัฒน์ธนกุล,ปีเตอร์ คอร์ป
+                        ไดเรนดัล,ก๊อต จิรายุ ตันตระกูล,คลาวเดีย จักรพันธุ์,วิทยา วสุไกรไพศาล</p>
                 </div>
             </div>
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ไทย/72a07d82-c467-4b67-bba9-af0fd78704d7.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ไทย/72a07d82-c467-4b67-bba9-af0fd78704d7.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -731,7 +752,8 @@
                 </div>
                 <div class="itemInfo">
                     <h1 class="item_title">แม่ครัวคนใหม่</h1>
-                    <p class="item_subtitle">วชิรวิชญ์ ไพศาลกุลวงศ์ ,น้ำฟ้า ธัญญภัสร์ ภัทรธีรชัยเจริญ , ศุภพงษ์ อุดมแก้วกาญจนา,พฤกษ์ พานิช</p>
+                    <p class="item_subtitle">วชิรวิชญ์ ไพศาลกุลวงศ์ ,น้ำฟ้า ธัญญภัสร์ ภัทรธีรชัยเจริญ , ศุภพงษ์
+                        อุดมแก้วกาญจนา,พฤกษ์ พานิช</p>
                 </div>
             </div>
         </div>
@@ -749,8 +771,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/The-Good-Doctor-Season-1.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ฝรั่ง/The-Good-Doctor-Season-1.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -767,8 +788,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/Shadow-and-Bone.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ฝรั่ง/Shadow-and-Bone.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -785,8 +805,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/Elite-เล่ห์ร้ายเกมไฮโซ-2018.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ฝรั่ง/Elite-เล่ห์ร้ายเกมไฮโซ-2018.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -839,8 +858,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/MANIFEST-ss2-1.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ฝรั่ง/MANIFEST-ss2-1.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -857,8 +875,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/Bridgerton-Season-1-2020-วังวนรัก-เกมไฮโซ.png"
-                            alt="">
+                        <img class="item_poster" src="img/ฝรั่ง/Bridgerton-Season-1-2020-วังวนรัก-เกมไฮโซ.png" alt="">
                     </div>
 
                     <div class="label">
@@ -875,8 +892,8 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/Locke-Key-Season-2-2021-ล็อคแอนด์คีย์-ปริศนาลับตระกูลล็อค.png"
-                            alt="">
+                        <img class="item_poster"
+                            src="img/ฝรั่ง/Locke-Key-Season-2-2021-ล็อคแอนด์คีย์-ปริศนาลับตระกูลล็อค.png" alt="">
                     </div>
 
                     <div class="label">
@@ -893,8 +910,7 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/The-End-of-the-F.jpg"
-                            alt="">
+                        <img class="item_poster" src="img/ฝรั่ง/The-End-of-the-F.jpg" alt="">
                     </div>
 
                     <div class="label">
@@ -911,7 +927,8 @@
             <div class="module_item">
                 <div class="itemPoster">
                     <div class="cover_all">
-                        <img class="item_poster" src="img/ฝรั่ง/MV5BZDNiZTEzMjgtNmU5OS00Yjc2LWJlMTUtNDI1ZGEzZTkxNzE5XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg"
+                        <img class="item_poster"
+                            src="img/ฝรั่ง/MV5BZDNiZTEzMjgtNmU5OS00Yjc2LWJlMTUtNDI1ZGEzZTkxNzE5XkEyXkFqcGdeQXVyMTAwMzM3NDI3._V1_.jpg"
                             alt="">
                     </div>
 
@@ -930,4 +947,5 @@
     </div>
 
 </body>
+
 </html>
