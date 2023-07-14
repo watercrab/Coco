@@ -179,6 +179,7 @@ body {
     margin-top: 80px;
 }
 .slider{
+  margin-top: 30px;
   width: 1000px;
   height: 550px;
   /* border-radius: 10px; */
@@ -301,9 +302,35 @@ body {
     display: none;
 }
 
-.chSeries{
-    margin: 0 auto 80px;
+.chSeries,.koSeries,.thSeries,.engSeries {
+    margin: 40px 80px 90px 60px;
 }
+/* 
+    
+        korean series 
+    
+*/
+/* .koSeries{
+    margin: 40px 80px 90px 60px;
+} */
+
+/* 
+    
+        thai series 
+    
+*/
+/* .thSeries{
+    margin: 40px 80px 90px 60px;
+} */
+
+/* 
+    
+        eng series
+    
+*/
+/* .engSeries{
+    margin: 40px 80px 90px 60px;
+} */
 
 .textIntro{
     display: flex;
@@ -313,6 +340,7 @@ body {
 }
 
 .module_title{
+    display: grid;
     margin: 15px 5px 20px 105px;
     line-height: 42px;
     font-size: 32px;
@@ -426,33 +454,6 @@ body {
     display: none;
 }
 
-/* 
-    
-        korean series 
-    
-*/
-.koSeries{
-    margin: 0 auto 80px;
-}
-
-
-/* 
-    
-        thai series 
-    
-*/
-.thSeries{
-    margin: 0 auto 80px;
-}
-
-/* 
-    
-        eng series
-    
-*/
-.engSeries{
-    margin: 0 auto 80px;
-}
 
 
 /*
@@ -714,8 +715,8 @@ body {
          chinese series
         ----------------------------
     */
-    .chSeries{
-        margin: 5px auto 20px;
+    .chSeries {
+        margin: 5px auto auto 20px;
     } 
     .textIntro{
         display: flex;
@@ -761,7 +762,7 @@ body {
         ----------------------------
     */
     .koSeries{
-        margin: 5px auto 20px;
+        margin: 5px auto auto 20px;
     }
 
     /* 
@@ -770,7 +771,7 @@ body {
         ----------------------------
     */
     .thSeries{
-        margin: 5px auto 20px;
+        margin: 5px auto auto 20px;
     }
 
     /* 
@@ -779,7 +780,7 @@ body {
         ----------------------------
     */
     .engSeries{
-        margin: 5px auto 20px;
+        margin: 5px auto auto 20px;
     }
     
 

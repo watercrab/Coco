@@ -231,7 +231,7 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(160px, 205px));
     gap: 30px;
     margin-bottom: 60px;
-    margin: 0 -9px -40px 105px;
+    margin: 0 9px 40px 160px;
     font-size: 14px;
 }
 .item_poster{

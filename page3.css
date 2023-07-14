@@ -8,6 +8,7 @@ body {
     /*padding-bottom: 50px; /* ทำให้มีระยะห่างด้านล่างของตัว body */
     font-family: FcFont; /* ชื่อของ font */
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @font-face {
@@ -155,13 +156,13 @@ body {
 }
 
 .web{
-  height: 500px;
+  height: 2000px;
 }
 
 .structure1 {
     position: relative;
-    top: 140px;
-    left: 125px;
+    top: 150px;
+    left: 225px;
 }
 .structure2 {
     position: relative;
@@ -200,28 +201,28 @@ a {
 }
 #header1 {
     position:absolute;
-    text-indent: 50px;
+    text-indent: 180px;
     text-decoration-line: none;
     color: black;
     top: -30px;
 }
 #header2 {
     position:absolute;
-    text-indent: 120px;
+    text-indent: 240px;
     text-decoration-line: none;
     color: black;
     top: -30px;
 }
 #header3 {
     position:absolute;
-    text-indent: 175px;
+    text-indent: 280px;
     text-decoration-line: none;
     color: black;
     top: -30px;
 }
 .group-movie {
     position: relative;
-    left: -308px;
+    left: -180px;
 }
 .self {
     vertical-align: top;
